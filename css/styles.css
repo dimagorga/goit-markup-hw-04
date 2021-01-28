@@ -4,7 +4,8 @@
     --accent-color:#2196F3;
     --background-main-color: #FFFFFF;
     --background-light-color:#F5F4FA;
-    --background-hero-color: #2F303A;
+    --background-hero-color:#2F303A;
+    ;
 }
 
 body{
@@ -174,12 +175,18 @@ img{
 
 /*========hero========*/
 .hero-section{
-    background-color: var(--background-hero-color);
-
     text-align: center; 
-    
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-color: var(--background-hero-color);
+    background-image: linear-gradient(         
+         rgba(47, 48, 58, 0.4),
+         rgba(47, 48, 58, 0.4)
+         ), url('../images/background/bg.png');         
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .main-title{
@@ -229,9 +236,26 @@ img{
     margin-right: 30px;
 }
 
+
+.advantages-area{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+        
+}
+
+.advantages-icon{    
+    width: 70px;
+    height: 70px;
+}
+
+
 .advantages-list-item{
     width: 270px;
-    height: 101px;
+    height: 251px;
 }
 
 .description-title{
