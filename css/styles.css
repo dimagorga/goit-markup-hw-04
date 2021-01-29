@@ -452,18 +452,24 @@ img{
 
 /*========FOOTER=======*/
 .footer{
-    
     background-color: var(--background-hero-color);
 
     padding-top: 60px;
     padding-bottom: 60px;
+    
 }
 
+.footer .container{
+    display: flex;
+    align-items: baseline    
+}
 
+.address{
+    margin-right: 70px;
+}
 
 .logo.bottom{
     color: var(--background-main-color);
-
 
     display: inline-block;
     margin-bottom: 20px; 
@@ -493,8 +499,6 @@ img{
     font-size: 14px;
     line-height: 1.714;
     text-decoration: none;
-    
-
 }
 
 .address-list-item-link:hover,
@@ -514,7 +518,23 @@ img{
     line-height: 1.142;
     text-transform: uppercase;
     color: var(--background-main-color);
+
+    margin-bottom: 20px;
 }   
+
+.social-link.dark-theme{
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-link.dark-theme:hover,
+.social-link.dark-theme:focus{
+    background-color: var(--accent-color);
+}
+
+.social-icon.dark-theme{ 
+    fill: #FFFFFF;
+}
+
 
 /*========FOOTER=======*/
 
@@ -523,7 +543,6 @@ img{
 .buttons-section{
     padding-top: 94px;
     padding-bottom: 94px;
-
         
     text-align: center;
 }
@@ -560,6 +579,7 @@ img{
 .buttons-link-item:focus{
     background: var(--accent-color);
     color: var(--background-main-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ==buttons-section end== */
@@ -585,11 +605,17 @@ img{
     margin-bottom: 0px;
 }
 
-.portfolio-link{
-    text-decoration: none;
-   
-    
+.portfolio-list-item:hover,
+.portfolio-list-item:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio-link{
+    text-decoration: none;    
+}
+
+
+
 .portfolio-link:visited{
     color: var(--title-text-color);
 }
